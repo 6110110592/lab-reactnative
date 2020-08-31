@@ -3,7 +3,7 @@ import { Text, ImageBackground, StyleSheet, View } from 'react-native'
 import Forecast from './Forecast';
 
 export default function Weather(props) { 
-    const [forecastInfo, setforecastInfo] = useState({
+    const [forecastInfo, setForecastInfo] = useState({
         main: '-',
         description: '',
         temp: 0
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     backdrop: {
         flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'space-evenly',
+        justifyContent: 'center',
         width: '100%',
         height: '100%',
     }
